@@ -2,12 +2,12 @@ CFLAGS=-c -Wall
 CROSS_COMPILE=
 CC=gcc
 
-all: hello.o
-	$(CROSS_COMPILE)$(CC) hello.c -o hello
+all: main.o
+	$(CROSS_COMPILE)$(CC) main.c -o main
 
 rebuild:
 	make clean
 	make
 
 clean: 
-	rm -rf *o hello
+	rm -rf *o main
