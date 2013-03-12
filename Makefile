@@ -1,4 +1,4 @@
 all:
-	gcc hello.c -o hello
+	$(CROSS_COMPILE)gcc hello.c -o hello
 clean:
 	rm -rf *o hello
